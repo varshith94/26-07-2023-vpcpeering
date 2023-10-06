@@ -1,6 +1,6 @@
 resource "aws_vpc" "prod" {
     provider = aws.central
-    cidr_block = var.cidr_block1
+    cidr_block = var.cidr_blocks1
     enable_dns_hostnames = true
     tags = {
         "Name" = "${var.vpcs_name}"
